@@ -3,7 +3,7 @@ name: read time sync
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 5,17 * * *'
+    - cron: '30 3 * * *'
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
